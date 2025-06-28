@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Форма</h1>
+      <form id="myForm">
+        <input type="text" placeholder="ФИО" required name="fullName" />
+
+        <p>Пол</p>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="gender" value="female" /> Жен.
+          </label>
+          <label>
+            <input type="radio" name="gender" value="male" /> Муж.
+          </label>
+        </div>
+
+        <input type="password" placeholder="Пароль" name="password" />
+
+        <p>Страна</p>
+        <select name="country">
+          <option value="russia">Россия</option>
+          <option value="uk">United Kingdom</option>
+        </select>
+
+        <p>Выберите:</p>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="icecream" value="icecream" /> Мороженое
+          </label>
+          <label>
+            <input type="checkbox" name="meat" value="meat" checked /> Мясо
+          </label>
+          <label>
+            <input type="checkbox" name="salad" value="salad" /> Салат
+          </label>
+        </div>
+
+        <textarea
+          name="comments"
+          rows="4"
+          placeholder="Что вы любите, напишите..."
+        ></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
